@@ -1,7 +1,9 @@
 (function(){
 	angular
 		.module('app', [
-			'ngMaterial'
+			'ngMaterial',
+			'mdDataTable',
+			'ngMdIcons'
 		])
 		.config(
 			function() {

@@ -24,6 +24,7 @@
     "angular-bootstrap": "~1.1.1",
     "angular-material": "~1.0.3",
     "angular-animate": "~1.4.9",
-    "angular-aria": "~1.4.9"
+    "angular-aria": "~1.4.9",
+    "mdDataTable": "~1.3.0"
   }
 }
