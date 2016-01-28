@@ -2,12 +2,14 @@
 	angular
 	.module('app')
 	.controller('MyController', [
-		'$scope'
-		,
-		function($scope){
-			$scope.users = 100;
+		'$scope',
+		'MyService',
+		function($scope, MyService){
+			
+			$scope.users = MyService.init();
+			
 			$scope.init = function(){
-				console.log('controller init');			
+				console.log('controller init');
 			}
 		}])
 }).call(this);
