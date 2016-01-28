@@ -1,7 +1,7 @@
 (function(){
 	angular
 		.module('app', [
-	  
+			'ngMaterial'
 		])
 		.config(
 			function() {

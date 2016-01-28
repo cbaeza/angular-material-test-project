@@ -5,11 +5,11 @@
 		'$scope',
 		'MyService',
 		function($scope, MyService){
-			
+			console.log('controller init');
 			$scope.users = MyService.init();
 			
 			$scope.init = function(){
-				console.log('controller init');
+				
 			}
 		}])
 }).call(this);
