@@ -3,11 +3,28 @@
 		.module('app', [
 			'ngMaterial',
 			'mdDataTable',
-			'ngMdIcons'
+			'ngMdIcons',
+			'ngRoute',
 		])
 		.config(
-			function($mdIconProvider, $mdThemingProvider) {
+			function($routeProvider, $mdIconProvider, $mdThemingProvider, $locationProvider) {
 				console.log('i am config');
+				//$locationProvider.html5Mode(true);
+				// configure route
+				$routeProvider.
+					when('/test', {
+						templateUrl: 'partials/test'
+						//controller: 'TestCtrl'
+					}).
+					when('/test2', {
+						templateUrl: 'partials/test2'
+						//controller: 'TestCtrl'
+					}).
+					otherwise({
+						redirectTo: '/'
+				});
+
+
 				$mdIconProvider
 					.defaultIconSet("./assets/svg/avatars.svg", 128)
 					.icon("menu"       , "./assets/svg/menu.svg"        , 24)
