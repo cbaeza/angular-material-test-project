@@ -3,10 +3,10 @@
 ## Technologies
   angular, angular-material, angular-route 
   
-### build
+## build
   bower install
   
-### run
+## run
   http-server .
   
 
