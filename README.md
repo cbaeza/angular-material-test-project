@@ -1,4 +1,4 @@
-# Angualr material test project
+# Angular material test project
 
 ## Technologies
   angular, angular-material, angular-route 
